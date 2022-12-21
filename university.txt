@@ -1,0 +1,23 @@
+excercize 1
+SELECT * FROM `students` WHERE YEAR(`date_of_birth`) = 1990;
+
+excercize 2
+SELECT * FROM `courses` WHERE `cfu` > 10;
+
+excercize 3
+SELECT * FROM `students` WHERE YEAR(`date_of_birth`) < 1992;
+
+excercize 4
+SELECT * FROM `courses` WHERE `period` LIKE 'I semestre' AND `year` = 1;
+
+excercize 5
+SELECT * FROM `exams` WHERE DATE(`date`) = '2020-06-20' AND `hour` BETWEEN '14:00:00' AND '23:59:59';
+
+excercize 6
+SELECT * FROM `degrees` WHERE `level` LIKE 'magistrale';
+
+excercize 7
+SELECT COUNT(`id`) AS 'Number of Departments' FROM `departments`;
+
+excercize 8
+SELECT * FROM `teachers` WHERE `phone` IS NULL;
